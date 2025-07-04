@@ -16,7 +16,7 @@ function useCustomPointer(defaultCustom = "") {
 
         return () => {
             window.removeEventListener("mousemove", handleMouseMove);
-            document.body.style.cursor = "auto"; // Reset cursor when component unmounts
+            document.body.style.cursor = "none"; // Reset cursor when component unmounts
         };
     }, []);
 
