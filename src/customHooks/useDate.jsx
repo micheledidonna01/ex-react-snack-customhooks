@@ -8,7 +8,6 @@ function useDate(){
         }, 1000);
     }, [date]);
 
-    console.log("useDate", date);
     return date;
 }
 

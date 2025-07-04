@@ -2,7 +2,7 @@ import React from 'react';
 import useDate from '../customHooks/useDate';
 function DataSection() {
     const date = useDate();
-    console.log("date", date);
+    // console.log("date", date);
   return (
       <div>
           <h1>Date every second</h1>
