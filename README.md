@@ -79,7 +79,7 @@ function App() {
 }
 ​
 export default App;
-```​
+
 ```
 
 ## 🎯 Bonus: useKeyPress() – Rilevare un Tasto Premuto
