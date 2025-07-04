@@ -1,0 +1,12 @@
+.custom-pointer {
+    position: fixed;
+    pointer-events: none;
+    font-size: 24px;
+    z-index: 9999;
+    /* Centra il contenuto sul punto esatto del mouse  */
+    transform: translate(-50%, -50%);
+}
+
+body{
+    cursor: none;
+}

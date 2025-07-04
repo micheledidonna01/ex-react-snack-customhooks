@@ -1,6 +1,9 @@
 
 import useCustomToggleBoolean from "./customHooks/useCustomToggleBoolean"
 import useDate from "./customHooks/useDate";
+// import useCustomPosition from "./customHooks/useCustomPosition";
+import useCustomPointer from "./customHooks/useCustomPointer";
+import "./App.css";
 
 function App() {
   const {booleanValue, changeBooleanValue} = useCustomToggleBoolean("false");
@@ -10,7 +13,8 @@ function App() {
   // console.log("date", date);
 
 
-  
+  const customPointer = useCustomPointer("😇");
+
 
   return (
     <>
@@ -25,6 +29,15 @@ function App() {
         <h1>Date every second</h1>
         <p>{date.toLocaleString()}</p>
       </div>
+
+
+      <div>
+        <h1>Hooks che cambia il cursore del mouse</h1>
+        {customPointer}
+  
+      </div>
+
+      
     </>
   )
 }
